@@ -6,7 +6,7 @@ from pinecone import Pinecone
 load_dotenv()
 
 INDEX_NAME = os.environ.get("PINECONE_INDEX_NAME", "developer-quickstart-py")
-NAMESPACE  = os.environ.get("PINECONE_NAMESPACE", "example-namespace")
+NAMESPACE  = os.environ.get("PINECONE_NAMESPACE", "kb-namespace")
 PC_API_KEY = os.environ["PINECONE_API_KEY"]
 
 _pc = Pinecone(api_key=PC_API_KEY)
