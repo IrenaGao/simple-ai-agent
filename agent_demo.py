@@ -7,6 +7,7 @@ from pydantic import BaseModel
 from dotenv import load_dotenv
 load_dotenv()
 from tools.pinecone_tool import search_kb
+from langchain.schema import AIMessage
 
 model = init_chat_model(
     "anthropic:claude-3-7-sonnet-latest",
@@ -25,7 +26,9 @@ agent = create_react_agent(
 )
 
 # Run the agent
-resp1 = agent.invoke({"messages": [
-    {"role": "user", "content": "Name a famous historical structure and when it was completed."}
+data = agent.invoke({"messages": [
+    {"role": "user", "content": "How do I set up Intercom?"}
 ]})
-print("\nKB answer:\n", resp1)
+last_ai = next(m for m in reversed(data["messages"]) if isinstance(m, AIMessage))
+answer = last_ai.content  # string or list; if list, filter 'type' == 'text'
+print(answer)

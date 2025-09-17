@@ -1,0 +1,96 @@
+Knowledge explained
+Start managing and organizing your internal and external support to power AI, agents and self-serve support.
+
+Beth-Ann Sher avatar
+Written by Beth-Ann Sher
+Updated over 7 months ago
+Knowledge in Intercom is a modern, centralized knowledge management system that makes it easy to manage, optimize, and configure all of the content that powers human agents, AI Agents, and self-serve support.
+
+
+
+Manage and store all of your support content
+Knowledge allows you to manage and store all your support content in one central place. Simply go to Knowledge > Sources to get started.
+
+
+
+Create, sync, or import content from external sources
+You can create content natively in Intercom, or choose to sync or import content from your existing external sources:
+
+Create new public articles
+
+Create new internal articles
+
+Create new snippets
+
+Sync public articles with Zendesk
+
+Import public articles from Zendesk
+
+Sync or import internal articles from external sources
+
+Sync and manage websites
+
+Upload and manage PDF files
+
+
+
+See an overview of content types you can create in Intercom and when to use them.
+
+ 
+
+Power Fin, Copilot, and your Help Center
+With all knowledge living in one place, you can easily decide which content you want to enable for:
+
+Fin to resolve customer questions instantly,
+
+Copilot to use when supporting teammates internally, and
+
+Help Center where your customers can search and self-serve information.
+
+
+All of your Help Center articles and any content you’ve previously added to Fin AI Agent will automatically be accessible in Knowledge > Content.
+
+
+
+Manage audience targeting for different content types
+When using content with Fin, you can configure custom audiences which target the right content at the right customer.
+
+ 
+
+
+ 
+
+Organize your content into folders
+All folders will appear in alphabetical order on the left sidebar of the Content page in Knowledge, and you can create new ones with up to 10 sub-folders to organize your content the way you want to.
+
+ 
+
+
+ 
+
+Search, filter, and take bulk actions
+Finding information has never been easier with a universal search available across all of your content, and filters to make your search narrower. 
+
+
+ 
+
+Once you’ve found what you’re looking for, quickly select the content and take bulk actions, including:
+
+Change AI Copilot state
+
+Change AI Agent state
+
+Move to folder
+
+Change audience
+
+Change Help Center status
+
+Change language
+
+Delete content and folders
+
+ 
+
+Manage teammate access and permissions
+All teammates in your workspace will have access to find and view content in Knowledge, but if you want to restrict who can create, edit and manage content - you can with Knowledge permissions.

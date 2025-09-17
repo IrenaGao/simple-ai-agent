@@ -1,0 +1,293 @@
+Getting started with Intercom
+How to set up customer support with Intercom.
+
+Beth-Ann Sher avatar
+Written by Beth-Ann Sher
+Updated over 6 months ago
+This comprehensive guide will help you get started with Intercom. We recommend you take the following steps as a priority, as these will unlock further features and functionality for you and your team to get the most out of Intercom.
+
+ 
+
+We’ve broken it up into sections:
+
+Connect with your customers
+
+Add and configure your team
+
+Build your knowledge base
+
+Meet your AI Agent
+
+Connect your apps  optional 
+
+Message your customers  optional 
+
+ 
+
+Step 1: Connect with your customers 
+
+First, connect with customers by installing the Messenger and enabling omnichannel communication such as email, phone, SMS, and WhatsApp so your customers can reach you wherever they are, and your team can handle everything in one place. This provides the best customer support experience because it allows you to collect data for personalization, enable Fin AI Agent to resolve queries or hand them over to an agent, and send outbound messages. 
+
+ 
+
+Install the Messenger code
+Whether the plan is to install the Messenger in a dev environment or in production first, be sure to start this process straight away. From the installation page, you’ll find two code snippets to (1) Install for visitors (2) Install for logged-in users, we recommend installing the Messenger for both.
+
+Install the Messenger for visitors
+
+Install the Messenger for logged-in users
+
+If you’re waiting for your engineer to complete the installation, go ahead and finish customizing your Messenger so you’re ready to use it when they are 👇
+
+ 
+
+Set up and customize the Messenger
+Customize to have a Messenger that looks and feels exactly like your brand, and suits your preferences such as when you’re available to chat and how inbound conversations are handled.
+
+Make it look and feel like your brand.
+
+Set your office hours.
+
+Control inbound conversations.
+
+ 
+
+Support inbound/outbound emails
+To send emails from your business or shared email address and improve open rates, you’ll first need to verify your domain. Then allow email forwarding from your address(es) to Intercom and manage all inbound email from your chosen inbox. With ‘sender address’ also configured, if a customer contacts you through support@examply.com, then your replies will also come from support@examply.com. 
+
+Set up and verify your custom domain for outbound email.
+
+Allow email forwarding for inbound email.
+
+Configure the sender address.
+
+ 
+
+Connect phone, SMS, WhatsApp, and social channels
+If you want to offer phone support or use other channels such as SMS, WhatsApp, Instagram, and Facebook, you should connect these channels to Intercom so your team can respond to all conversations from one place.
+
+Set up Phone.
+
+Set up SMS.
+
+Connect WhatsApp business number.
+
+Connect Instagram business account.
+
+Connect Facebook business page.
+
+   
+
+🤓 Learn more:
+
+Video: Personalize your support with the Intercom Messenger.
+
+Article: Best practices for installing the Messenger.
+
+Post: Learn about the benefits of providing live chat, how it works, and best practices.
+
+Academy course: Getting started with Intercom: Fundamentals
+
+ 
+
+Step 2: Add and configure your team 
+
+Time to invite your team! These steps set your business up for success by defining some of the basic roles and permissions that will be used going forward. Most of them only need to be configured once, and they will make it easy for you to manage your team as you grow. 
+
+ 
+
+Create custom roles to manage permissions
+Custom roles are reusable sets of permissions that you can assign to teammates when you invite them to your Intercom workspace. They also make it simple to update permissions for a large group of people all at once.
+
+Create custom roles.
+
+ 
+
+Add teammates
+Now you can ask teammates to join your workspace and set their permissions. Depending on your plan, you can also assign lite seats to collaborate with teammates outside of your Support team.
+
+Add teammates to your workspace.
+
+Assign lite seats (Advanced and Expert plan only).
+
+  
+
+🤓 Learn more:
+
+Article: Best practices for setting up roles and permissions for a Support team.
+
+Academy course: For Support teams - Provide a great customer support experience. 
+
+ 
+
+Step 3: Build your knowledge base
+
+The next crucial step to setting up a successful customer service offering is building your knowledge base with support content. Having a good content early on enables you to automate more than 50% of inbound conversations using our AI Agent, provide all teammates with a personal AI assistant, and increase the number of customers who self-serve via your Help Center. Plus, it’s more efficient to manage all your internal and external content in one place.
+
+ 
+
+Create, sync or import your public help content
+Start by creating public articles or syncing / importing your existing knowledge base from Zendesk. Then customize your on-brand help center and set it live so customers can self-serve. To use these articles with Fin AI Agent and provide customers with instant answers, you can decide which content Fin has access to.
+
+Create public articles or sync / import from Zendesk.
+
+Set up and customize your help center.
+
+Enable content for Fin AI Agent.
+
+ 
+
+Create, sync or import your internal help content
+Knowledge inside Intercom is also your internal knowledge management system for creating, syncing, or importing internal articles from Confluence, Guru, or Notion. To provide teammates with their own personal AI assistant in the inbox, you can enable these articles for Copilot. 
+
+Create internal articles or sync / import content.
+
+Enable content for Copilot.
+
+ 
+
+🤓 Learn more:
+
+Academy course: Knowledge Management.
+
+Dive into the ultimate guide to knowledge management in the age of AI.
+
+Listen to our podcast on fueling the AI machine with the knowledge it needs.
+
+ 
+
+Step 4: Meet your AI Agent
+
+ 
+
+After investing in a tip-top knowledge base, you’re ready to test that knowledge with Fin AI Agent and witness the real magic of good quality content. Fin is the key to instantly resolving 50% of your support queries. It improves your customer experience by reducing wait times and boosting CSAT scores, and frees your team up to focus on the most complex issues, or transition into value-oriented roles like customer success. You can see it all in action before any of your customers and learn exactly how Fin behaves.
+
+ 
+
+Enable content and preview Fin AI Agent
+All Fin needs to perform well and start resolving conversations is your support content, so you’ll need to get this added before you can preview and start interacting with Fin in the Messenger.
+
+Add your support content.
+
+Use the interactive Messenger preview to ask Fin some questions.
+
+ 
+
+Test Fin with a specific audience
+If you’d like to test Fin internally with teammates, or trial it on a specific group of customers, it’s easy to do this using audience rules.
+
+Share Fin with your team or specific customers.
+
+ 
+
+🤓 Learn more:
+
+Academy course: Getting started with Fin AI Agent.
+
+Video: Cut support volume with Intercom’s Fin AI Agent.
+
+Post: Learn more about ​​Fin, the breakthrough AI bot for customer service.
+
+ 
+
+Step 5: Connect your apps  optional  
+
+With the essentials set up, you should consider how Intercom fits into your current tech stack and install the apps you regularly use. Then look at bringing your data into Intercom to segment and target customers based on who they are and their behavior, helping you create more personal interactions and drive customer engagement.
+
+ 
+
+Find the integrations you need via our App Store:
+CRM integration - Salesforce, Pipedrive, HubSpot
+
+Data enrichment - Segment, Amplitude, Mixpanel, Stripe
+
+Workflow automation - Slack, Zapier, Tray Platform, Tonkean, Asana, Monday.com
+
+Issue tracking - Jira for Tickets & GitHub
+
+Scheduling - Google Calendar, Outlook Calendar, Calendly
+
+Additional free apps - Quick Links, Article Inserter, Google Meet, Content Showcase
+
+ 
+
+Set up your custom data
+Determine what custom data you need to integrate with Intercom to truly personalize the customer experience. Then plan and organize the data you want to capture and create it inside Intercom.
+
+Determine what custom data you need.
+
+Plan and organize the data.
+
+Create and track custom data in Intercom.
+
+ 
+
+🤓 Learn more:
+
+Available apps and integrations in Intercom.
+
+Podcast: Planning your custom data in Intercom. 
+
+ 
+
+Step 6: Send outbound messages to your customers  optional  
+
+You can start proactively messaging your customers now too! With a suite of message types including outbound email, chat, surveys, banners, product tours and more, you’re able to reach customers how you want, when you want. This reduces inbound volume all while driving up adoption, retention and customer satisfaction.
+
+ 
+
+Create your first outbound message
+Start with creating an outbound email or in-app chat message and use audience rules to target your message at the right customers.
+
+Create an email or in-app chat message.
+
+Configure audience rules.
+
+ 
+
+Customize email templates and subscriptions
+You can also build your own on-brand reusable email templates and manage multiple email lists with granular subscriptions.
+
+Create a reusable email template.
+
+Manage granular subscriptions.
+
+ 
+
+Consider other channels you want to use
+Email, chat, banners, and tooltips are available on all plans as standard. If you want to survey your customers, give product tours, orchestrate outbound campaigns with Series, and more - get the Proactive Support Plus add-on for your plan.
+
+Learn more about Proactive Support Plus.
+
+ 
+
+🤓 Learn more:
+
+Video: Sending targeted messages with audience rules.
+
+Post: What is proactive support?
+
+Case study: Leveraging omnichannel messaging to proactively support customers and drive product adoption.
+
+ 
+
+More of a visual learner?
+If you're new to Intercom, check out our Intercom Academy course: Getting started with Intercom: Fundamentals. This will guide you through your first steps with Intercom, helping you fully leverage its capabilities and start seeing value right away.
+
+ 
+
+Go to Intercom Academy
+ 
+
+What's next?
+Set up the Inbox - Learn how to configure your Intercom Inbox for effective omnichannel support.
+
+Leverage AI and Automation - Learn how to speed up your support with Workflows to automatically triage and route conversations, and enable Fin AI Agent to resolve queries for you.
+
+ 
+
+ 
+
+💡Tip
+Need more help? Get support from our Community Forum
+Find answers and get help from Intercom Support and Community Experts

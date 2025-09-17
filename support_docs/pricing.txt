@@ -1,0 +1,169 @@
+Intercom plans explained
+Beth-Ann Sher avatar
+Written by Beth-Ann Sher
+Updated over 2 weeks ago
+This article refers to our new pricing plans. For information about one of our legacy plans, please log in to view these articles instead, or contact us through the Messenger.
+
+
+Our pricing plans are designed with simplicity in mind, removing unnecessary complexity, and helping you to have a clear understanding of what you're paying for.
+
+
+Customer Service Suite plans
+When you join Intercom, you’ll be given a workspace with a core plan of your choice - Essential, Advanced, or Expert. It’s possible to upgrade or downgrade between these plans.
+
+
+Each teammate requires a seat which gives them access to Intercom’s Customer Service Suite. The plan you choose determines the monthly seat price. None of our plans have seat minimums or maximums - you can purchase as few or as many seats as you need. 
+
+
+The Advanced and Expert plans also include a number of lite seats, which provide limited access to Intercom.
+
+
+All prices are shown in United States Dollars (USD). 
+
+
+Pricing and features
+
+Essential
+Advanced
+Expert
+Monthly seat price
+$39/seat
+No lite seats
+
+$99/seat
+20 lite seats included
+
+$139/seat
+50 lite seats included
+
+Discounted seat price on annual subscription
+
+$29/seat
+
+$85/seat
+
+$132/seat
+
+Key Features
+Includes features:
+
+Fin AI Agent
+
+Messenger
+
+Shared Inbox and Ticketing system
+
+Pre-built reports
+
+Public Help Center
+
+Simple automations
+
+Every Essential feature, plus:
+
+Multiple team Inboxes
+
+Workflows
+
+Round robin assignment
+
+Private and multilingual Help Center
+
+Tickets portal
+
+Custom reports
+
+Additional integrations: Slack, Salesforce, Marketo and more
+
+Every Advanced feature, plus:
+
+SSO & identity management
+
+HIPAA support
+
+Service level agreements (SLAs)
+
+Multibrand Messenger / Help Center
+
+Workload management
+
+Team office hours and reply time
+
+Extended API limit  
+
+Real-time dashboard
+
+Best For
+The customer support plan for individuals, startups, and small businesses.
+
+Powerful automation tools and AI features for growing support teams.
+
+Collaboration, security, and multibrand features for large support teams.
+
+
+All plans include free, unlimited live-chat, support email, in-app chats, banners, and tooltips. Visit our pricing page for a detailed breakdown of features included on each plan. 
+
+
+Usage-based charges
+When using Fin AI Agent on your plan, it costs $0.99 per resolution. You'll also pay-as-you-go for email campaigns, SMS, WhatsApp, and Phone. Every plan gives you access to these features, and you’ll only pay for what you use. 
+
+
+Use our intuitive Pricing Calculator to effortlessly project your expenses and gain clarity on how Intercom fits within your budget.
+
+
+Add-ons
+Proactive Support Plus
+Proactive Support Plus is designed to streamline your outbound efforts with extra features specifically designed for Proactive Support. You’ll be charged a flat fee per month plus usage-based charges for Messages Sent, if you exceed your monthly allowance. You can purchase this add-on for any plan.
+
+
+Copilot unlimited usage
+Copilot is a personal AI assistant designed to revolutionize support agent efficiency. All teammates with a full seat will have access to Copilot included usage (up to 10 conversations per month). Unlimited usage can be purchased as a flexible per seat add-on for each teammate on any plan.
+
+
+Services 
+With these optional service add-ons, you can gain access to personalized onboarding and priority customer support.
+
+Premier Onboarding - Gives access to an onboarding specialist to provide custom onboarding help for a one-time fee.
+
+Premier Support - Gives access to faster response times, priority escalations, video chat, and greater availability from our CS team for a monthly recurring fee.
+
+Contact Sales if you’re interested in one of these services.
+
+
+Fin AI Agent for your existing helpdesk
+When purchasing Fin for your existing helpdesk (Zendesk, Salesforce, and more) the following pricing applies:
+
+$0.99 per Fin resolution
+
+50 resolutions per month minimum.
+
+Unlimited teammates – No seat costs.
+
+There are no additional costs, such as integration fees, setup fees, or platform charges for using Fin on your existing helpdesk.
+
+
+Features include:
+
+Set up in under an hour on your current helpdesk
+
+Answers email, live chat, phone and more
+
+Customizable tone & answer length
+
+Takes action on external systems
+
+Hands off to agents in preferred helpdesk
+
+
+Discounts 
+Startups get 90% off Intercom + 1 year of Fin free on Intercom's Early Stage program. Find out what’s included and whether you’re eligible to apply here.
+
+
+Getting started
+Start a free trial - no credit card required. During the 14-day trial, you’ll have access to your chosen plan along with Proactive Support Plus and Copilot unlimited usage.
+
+
+After the free trial period, simply confirm the plan you want, and add your credit card details to continue using Intercom.
+
+
+Visit our pricing FAQs for more answers and details about pricing, plans and joining Intercom.

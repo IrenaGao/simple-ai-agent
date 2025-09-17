@@ -1,0 +1,123 @@
+Security at Intercom
+Learn how Intercom protects customer data with strong security practices.
+
+Beth-Ann Sher avatar
+Written by Beth-Ann Sher
+Updated over 2 months ago
+Keeping our customers' data secure is the most important thing that Intercom does. We go to considerable lengths to ensure that all data sent to Intercom is handled securely - keeping Intercom secure is fundamental to the nature of our business. 
+
+ 
+
+We want to share some of the details of what we do to keep things secure, and some of the work that we're doing to continually improve the security of your data. This document is a living document, and we will add to it from time to time. 
+
+ 
+
+You may also be interested in reviewing our Terms of Use and Privacy Policy. For any questions or to access compliance documentation, please visit our Trust Center. You can always contact us at security@intercom.io too if needed.
+
+ 
+
+Our team has relevant experience
+Our team includes people who've played lead roles in designing, building and operating highly secure Internet-facing systems, such as payment processing platforms, cloud services and content distribution networks in companies such as Amazon and Facebook. We also have people who've successfully built a number of startups from scratch, and others who have worked in well-established smaller Internet businesses.
+
+ 
+
+We host in world-class facilities
+The vast majority of our services and data are hosted in Amazon Web Services facilities in the USA. Further details about the considerable measures Amazon takes in securing their facilities and services can be found here.
+
+ 
+
+We follow best practices
+At Intercom we follow a number of best practices that improve our security posture.
+
+ 
+
+Here are a few examples:
+
+ 
+
+We have reliable, frequently used automation in place so that we can safely and reliably roll out changes to both our application and operating platform within minutes. We typically deploy dozens of times a day, so we have high confidence that we can get a security fix out quickly when required.
+
+All data sent to Intercom is encrypted in transit. Our API and application endpoints are TLS/SSL only and score an "A+" rating on SSL Labs' tests - meaning that we only use strong cipher suites and have features such as HSTS and Perfect Forward Secrecy fully enabled. We also encrypt data at rest.
+
+We regularly engage with well-regarded third-party auditors to audit our codebase and infrastructure, and work with them to resolve potential issues.
+
+Our infrastructure is managed as code with Terraform. We use technologies such as Elasticsearch, AWS CloudTrail and PantherLabs to provide an audit trail over our infrastructure and the Intercom application. Auditing allows us to do ad-hoc security analysis, track changes made to our setup and audit access to every layer of our stack.
+
+We use two-factor authentication whenever possible. We ask vendors to enforce two-factor authentication in all our accounts. We discourage use of shared accounts on any system - when we have no choice we use 1Password to securely share logins. We review which accounts can access our systems and the permissions they have regularly.
+
+We don't trust our corporate network - it has no backdoors into our production systems.
+
+We have a documented incident response plan and educate all staff on security procedures and policies.
+
+External penetration testing twice a year performed by dedicated external security partners.
+
+Running continuous scans on our main web properties using Detectify.
+
+Any changes to the Intercom codebase have been peer reviewed and are automatically tested as part of our CI/CD process to identify any regression or security flaws using static analysis.
+
+Running a public bug bounty program with Bugcrowd.
+
+More details are available on our Security page and in our Trust Center.
+
+ 
+
+Product security: how to secure your Intercom workspace
+Security has a shared responsibility. You should enable the following product security features to enhance the security of your workspace.
+
+ 
+
+Secure your workspace
+These features help you to secure your Intercom workspace and protect your data.
+
+ 
+
+⭐ Use 2FA, Google Sign-On or SAML SSO to protect your account and disable username / password logins, to reduce the risk of phishing attacks. This is strongly recommended.
+
+Role-based access controls - set roles and permissions to restrict access to sensitive data and features.
+
+IP allowlisting - restrict workspace access to specific IP addresses.
+
+Custom session length - control how long teammates stay authenticated by setting custom session durations.
+
+Teammate activity logs - monitor and audit important actions taken by teammates on your workspace.
+
+Link security - protect teammates from accessing malicious links by enabling link warnings and creating policies to manage links and domains in your workspace.
+
+PAN redaction - automatically detect and redact payment card numbers (PANs) from conversations.
+
+Attachment security - control how attachments are used in your workspace.
+
+ 
+
+ 
+
+Secure your Messenger
+These features protect your Messenger installation and help secure communications with your customers.
+
+⭐ Secure your Messenger with JWTs - prevent bad actors from impersonating your end users, reading their conversations or getting unauthorised access to data. Additionally, using JWTs allows you to both verify user identity and protect all data attributes you send about them. This is strongly recommended.
+
+Add a trusted domains list to ensure the Messenger is only loaded on domains you own and care about.
+
+Disable attribute creation via the Messenger to prevent bad actors from inserting their own data through the browser.
+
+Use the Intercom JavaScript shutdown method to end a session for a user when they log out of your app.
+
+You can learn more about these features in the Security & Privacy and Messenger Security sections of our Help Center.
+
+ 
+
+ 
+
+We do not store payment details
+Intercom is not in the business of storing or processing payments. All payments made to Intercom go through our partner, Stripe. Details about their security setup and PCI compliance can be found at Stripe's security page.
+
+ 
+
+I've found a security bug!
+If you've found a security vulnerability in Intercom that you wish to report to us, you can do so via our public bug bounty program on Bugcrowd. If it's within scope, you may be eligible for a reward. We do not accept bug bounty submissions via our email address, please only send them through Bugcrowd.
+
+ 
+
+If you're a customer concerned about the security of your own Intercom workspace, reach out to security@intercom.io or contact via CS team on the Messenger.
+
+ 
