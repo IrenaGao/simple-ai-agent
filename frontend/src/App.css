@@ -1,0 +1,617 @@
+.app {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #f5f5f5;
+}
+
+.app-header {
+  background: white;
+  padding: 16px 24px;
+  border-bottom: 1px solid #e0e0e0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.app-header h1 {
+  color: #333;
+  font-size: 24px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.header-controls {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.app-content {
+  flex: 1;
+  display: flex;
+  overflow: hidden;
+}
+
+.main-panel {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.flow-container {
+  flex: 1;
+  background: white;
+  margin: 16px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  overflow: hidden;
+}
+
+.sidebar {
+  width: 400px;
+  background: white;
+  border-left: 1px solid #e0e0e0;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}
+
+.sidebar-section {
+  padding: 16px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.sidebar-section h3 {
+  margin: 0 0 16px 0;
+  color: #333;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.error-banner {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: #f44336;
+  color: white;
+  padding: 12px 16px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.error-banner button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+  padding: 0;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loading-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  color: white;
+  font-size: 16px;
+}
+
+.loading-overlay .loading-spinner {
+  margin-right: 12px;
+}
+
+/* React Flow customizations */
+.react-flow__node {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+}
+
+.react-flow__edge-path {
+  stroke: #b1b1b7;
+  stroke-width: 2;
+}
+
+.react-flow__edge.selected .react-flow__edge-path {
+  stroke: #555;
+}
+
+.react-flow__edge.animated .react-flow__edge-path {
+  stroke-dasharray: 5;
+  animation: dashdraw 0.5s linear infinite;
+}
+
+@keyframes dashdraw {
+  to {
+    stroke-dashoffset: -10;
+  }
+}
+
+.react-flow__controls {
+  background: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+}
+
+.react-flow__controls-button {
+  background: white;
+  border: none;
+  color: #666;
+}
+
+.react-flow__controls-button:hover {
+  background: #f5f5f5;
+  color: #333;
+}
+
+.react-flow__minimap {
+  background: #f5f5f5;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+}
+
+/* Query Form Styles */
+.query-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  min-width: 400px;
+  background: white;
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.form-group {
+  display: flex;
+  gap: 8px;
+  align-items: flex-end;
+}
+
+.query-input {
+  flex: 1;
+  padding: 12px;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.query-input:focus {
+  border-color: #2196f3;
+}
+
+.submit-button {
+  padding: 12px 20px;
+  background: #2196f3;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: background-color 0.2s;
+}
+
+.submit-button:hover:not(:disabled) {
+  background: #1976d2;
+}
+
+.submit-button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+.form-options {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  color: #666;
+  cursor: pointer;
+}
+
+.checkbox-label input[type="checkbox"] {
+  margin: 0;
+}
+
+/* Response Display Styles */
+.response-display {
+  background: white;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 16px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  border-left: 4px solid #2196f3;
+}
+
+.response-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
+  color: #333;
+}
+
+.response-header h3 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+  flex: 1;
+}
+
+.copy-button {
+  background: none;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  padding: 4px 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 12px;
+  color: #666;
+  transition: all 0.2s;
+}
+
+.copy-button:hover {
+  background: #f5f5f5;
+  border-color: #ccc;
+}
+
+.copy-button:active {
+  background: #e0e0e0;
+}
+
+.response-content {
+  min-height: 60px;
+}
+
+.response-content.loading {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #666;
+  font-style: italic;
+}
+
+.response-content.empty {
+  color: #999;
+  font-style: italic;
+  text-align: center;
+  padding: 20px;
+}
+
+.response-text {
+  line-height: 1.6;
+  color: #333;
+}
+
+.response-text p {
+  margin: 0 0 8px 0;
+}
+
+.response-text p:last-child {
+  margin-bottom: 0;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .app-content {
+    flex-direction: column;
+  }
+  
+  .sidebar {
+    width: 100%;
+    height: 300px;
+  }
+  
+  .app-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+  
+  .header-controls {
+    width: 100%;
+  }
+}
+
+/* Advanced form options */
+.advanced-toggle {
+  padding: 8px 12px;
+  background: #f8f9fa;
+  color: #495057;
+  border: 1px solid #dee2e6;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 12px;
+  transition: all 0.2s;
+}
+
+.advanced-toggle:hover:not(:disabled) {
+  background: #e9ecef;
+  border-color: #adb5bd;
+}
+
+.advanced-toggle:disabled {
+  background: #f8f9fa;
+  color: #6c757d;
+  cursor: not-allowed;
+}
+
+.advanced-options {
+  margin-top: 15px;
+  padding: 15px;
+  background: #f8f9fa;
+  border-radius: 6px;
+  border: 1px solid #dee2e6;
+}
+
+.field-label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+  color: #495057;
+  font-size: 14px;
+}
+
+.system-prompt-input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 13px;
+  font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+  resize: vertical;
+  min-height: 80px;
+}
+
+.system-prompt-input:focus {
+  outline: none;
+  border-color: #2196f3;
+  box-shadow: 0 0 0 2px rgba(33, 150, 243, 0.25);
+}
+
+.field-help {
+  margin-top: 6px;
+  font-size: 12px;
+  color: #6c757d;
+  line-height: 1.4;
+}
+
+/* Agent Outputs Panel */
+.agent-outputs-panel {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  margin-bottom: 16px;
+  overflow: hidden;
+}
+
+.panel-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 16px;
+  background: #f8f9fa;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.panel-header h3 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+}
+
+.output-count {
+  background: #2196f3;
+  color: white;
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 500;
+  margin-left: auto;
+}
+
+.no-outputs {
+  padding: 24px;
+  text-align: center;
+  color: #6c757d;
+}
+
+.outputs-list {
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.output-item {
+  border-bottom: 1px solid #e9ecef;
+}
+
+.output-item:last-child {
+  border-bottom: none;
+}
+
+.output-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 16px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  border-left: 4px solid #ddd;
+}
+
+.output-header:hover {
+  background: #f8f9fa;
+}
+
+.output-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex: 1;
+}
+
+.agent-icon {
+  font-size: 20px;
+  width: 24px;
+  text-align: center;
+}
+
+.output-details {
+  flex: 1;
+}
+
+.output-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 4px;
+}
+
+.agent-type {
+  font-weight: 600;
+  color: #333;
+  text-transform: capitalize;
+}
+
+.output-type {
+  background: #e9ecef;
+  color: #495057;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.output-meta {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  color: #6c757d;
+}
+
+.success-icon {
+  color: #4caf50;
+}
+
+.error-icon {
+  color: #f44336;
+}
+
+.output-actions {
+  color: #6c757d;
+  transition: transform 0.2s;
+}
+
+.output-header:hover .output-actions {
+  color: #333;
+}
+
+.output-content {
+  padding: 16px;
+  background: #f8f9fa;
+  border-top: 1px solid #e9ecef;
+}
+
+.content-section {
+  margin-bottom: 16px;
+}
+
+.content-section:last-child {
+  margin-bottom: 0;
+}
+
+.content-section h4 {
+  margin: 0 0 8px 0;
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+}
+
+.content-text {
+  background: white;
+  padding: 12px;
+  border-radius: 4px;
+  border: 1px solid #e9ecef;
+  font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+  font-size: 13px;
+  line-height: 1.5;
+  white-space: pre-wrap;
+  word-break: break-word;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.metadata-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 8px;
+}
+
+.metadata-item {
+  display: flex;
+  flex-direction: column;
+  background: white;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #e9ecef;
+}
+
+.metadata-key {
+  font-weight: 600;
+  color: #495057;
+  font-size: 12px;
+  margin-bottom: 2px;
+}
+
+.metadata-value {
+  color: #6c757d;
+  font-size: 12px;
+  word-break: break-word;
+}
+
+.error-section {
+  border-left: 4px solid #f44336;
+  padding-left: 12px;
+}
+
+.error-message {
+  background: #ffebee;
+  color: #c62828;
+  padding: 8px;
+  border-radius: 4px;
+  font-size: 13px;
+  font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+}

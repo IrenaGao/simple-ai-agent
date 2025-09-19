@@ -1,0 +1,310 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f5f5f5;
+}
+
+#root {
+  height: 100vh;
+  width: 100vw;
+}
+
+.react-flow__node-agent {
+  background: #e1f5fe;
+  border: 2px solid #01579b;
+  border-radius: 8px;
+  padding: 12px;
+  font-weight: 500;
+  width: 300px;
+  min-height: 120px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.react-flow__node-tool {
+  background: #f3e5f5;
+  border: 2px solid #4a148c;
+  border-radius: 8px;
+  padding: 12px;
+  font-weight: 500;
+  width: 300px;
+  min-height: 120px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.react-flow__node-event {
+  background: #e8f5e8;
+  border: 2px solid #2e7d32;
+  border-radius: 6px;
+  padding: 10px;
+  font-size: 11px;
+  width: 180px;
+  min-height: 80px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* Node content styling */
+.node-title {
+  font-weight: 600;
+  font-size: 14px;
+  margin-bottom: 4px;
+  color: #333;
+}
+
+.node-subtitle {
+  font-size: 12px;
+  color: #666;
+  margin-bottom: 8px;
+}
+
+.node-details {
+  margin-top: 8px;
+  border-top: 1px solid rgba(0,0,0,0.1);
+  padding-top: 8px;
+}
+
+/* Event list styling */
+.event-list, .call-list {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.event-item, .call-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 10px;
+  padding: 2px 4px;
+  background: rgba(255,255,255,0.5);
+  border-radius: 3px;
+}
+
+.event-type, .call-agent {
+  font-weight: 500;
+  color: #333;
+}
+
+.event-step {
+  color: #666;
+  font-style: italic;
+}
+
+.event-duration, .call-duration {
+  color: #2196f3;
+  font-weight: 500;
+}
+
+.call-status.success {
+  color: #4caf50;
+  font-weight: bold;
+}
+
+.call-status.error {
+  color: #f44336;
+  font-weight: bold;
+}
+
+.event-more, .call-more {
+  font-size: 9px;
+  color: #999;
+  text-align: center;
+  font-style: italic;
+}
+
+/* Event info styling */
+.event-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.event-time {
+  font-size: 9px;
+  color: #666;
+  font-weight: 500;
+}
+
+.event-tool, .event-model {
+  font-size: 9px;
+  color: #2196f3;
+  font-weight: 500;
+}
+
+.event-error {
+  font-size: 9px;
+  color: #f44336;
+  font-weight: 500;
+}
+
+.event-delegation {
+  font-size: 9px;
+  color: #ff9800;
+  font-weight: 500;
+}
+
+/* Prevent node overlaps and ensure proper spacing */
+.react-flow__node {
+  position: absolute !important;
+  z-index: 1;
+}
+
+.react-flow__node:hover {
+  z-index: 10;
+  transform: scale(1.02);
+  transition: transform 0.2s ease;
+}
+
+/* Ensure proper spacing in the flow */
+.react-flow {
+  background: #f8f9fa;
+}
+
+.react-flow__viewport {
+  background: #f8f9fa;
+}
+
+/* Add visual separators between rows */
+.react-flow__node-agent::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #01579b, transparent);
+  opacity: 0.3;
+}
+
+.react-flow__node-tool::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #4a148c, transparent);
+  opacity: 0.3;
+}
+
+/* Improve edge visibility */
+.react-flow__edge-path {
+  stroke: #666;
+  stroke-width: 2;
+  stroke-dasharray: none;
+}
+
+.react-flow__edge.selected .react-flow__edge-path {
+  stroke: #2196f3;
+  stroke-width: 3;
+}
+
+/* Add subtle animation to nodes */
+.react-flow__node {
+  transition: all 0.2s ease;
+}
+
+.react-flow__node:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.optimization-card {
+  background: white;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 12px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  border-left: 4px solid #ff9800;
+}
+
+.optimization-card.high {
+  border-left-color: #f44336;
+}
+
+.optimization-card.medium {
+  border-left-color: #ff9800;
+}
+
+.optimization-card.low {
+  border-left-color: #4caf50;
+}
+
+.optimization-card.critical {
+  border-left-color: #9c27b0;
+}
+
+.telemetry-event {
+  background: white;
+  border-radius: 6px;
+  padding: 12px;
+  margin-bottom: 8px;
+  border-left: 3px solid #2196f3;
+  font-size: 14px;
+}
+
+.telemetry-event.error {
+  border-left-color: #f44336;
+  background: #ffebee;
+}
+
+.telemetry-event.success {
+  border-left-color: #4caf50;
+  background: #e8f5e8;
+}
+
+.status-indicator {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.status-running {
+  background-color: #2196f3;
+  animation: pulse 2s infinite;
+}
+
+.status-completed {
+  background-color: #4caf50;
+}
+
+.status-failed {
+  background-color: #f44336;
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.loading-spinner {
+  border: 3px solid #f3f3f3;
+  border-top: 3px solid #3498db;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  animation: spin 1s linear infinite;
+  display: inline-block;
+  margin-right: 8px;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
